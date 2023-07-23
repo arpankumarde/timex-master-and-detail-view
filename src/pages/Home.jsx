@@ -1,6 +1,7 @@
 import React from 'react';
 import { itemData } from '../api'
 import { Link } from 'react-router-dom';
+import { AiFillStar } from 'react-icons/ai';
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
             <div>
               {item.title}
             </div>
-            <div>
-              Rating: {item.rating.rate} star
+            <div className='flex items-center gap-2'>
+              {item.rating.rate} <AiFillStar />
             </div>
           </div>
         </Link>

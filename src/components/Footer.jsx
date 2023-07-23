@@ -6,7 +6,7 @@ export default function Footer() {
   const year = date.getFullYear();
 
   return (
-    <footer className='bg-green-200 h-10 flex items-center justify-between px-10 font-semibold'>
+    <footer className='h-10 flex items-center justify-between px-10 font-semibold border-t-2'>
       <Link to='/items' className='text-lg' >
         &copy; Shopper's Stop, {year}
       </Link>
